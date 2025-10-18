@@ -16,11 +16,6 @@ const routes = [
         component: () => import("../views/traffic/index.vue"),
       },
       {
-        path: "population",
-        name: "population",
-        component: () => import("../views/population/index.vue"),
-      },
-      {
         path: "environment",
         name: "environment",
         component: () => import("../views/environment/index.vue"),
