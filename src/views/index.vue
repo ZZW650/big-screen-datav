@@ -9,7 +9,7 @@
           <div class="d-flex jc-center">
             <dv-decoration-8 class="dv-dec-8" :color="decorationColor" />
             <div class="title">
-              <span class="title-text">智慧城市大屏可视化</span>
+<!--              <span class="title-text">智慧城市大屏可视化</span>-->
               <dv-decoration-6
                 class="dv-dec-6"
                 :reverse="true"
@@ -28,40 +28,26 @@
         <!-- 导航栏 -->
         <div class="d-flex jc-between px-2">
           <div class="d-flex aside-width">
-            <div
-              class="react-left ml-4 react-l-s"
-              :class="{ bgc: tabbarIndex == 0 }"
-            >
-              <span
-                class="react-left"
-                :class="{ bgc: tabbarIndex == 0 }"
-              ></span>
-              <router-link to="/traffic"
-                ><span class="text" @click="changeTabbarIndex(0)"
-                  >交通情况</span
-                ></router-link
-              >
-            </div>
             <div class="react-left ml-3" :class="{ bgc: tabbarIndex == 1 }">
-              <router-link to="/population"
+              <router-link to="/traffic"
                 ><span class="text" @click="changeTabbarIndex(1)"
-                  >城市人口</span
+                  >多灾种灾害链分析</span
                 ></router-link
               >
             </div>
             <div class="react-left ml-3" :class="{ bgc: tabbarIndex == 2 }">
-              <router-link to="/environment"
+              <router-link to="/economy"
                 ><span class="text" @click="changeTabbarIndex(2)"
-                  >环境生态</span
+                  >次生衍生事件链</span
                 ></router-link
               >
             </div>
           </div>
           <div class="d-flex aside-width">
             <div class="react-right mr-3" :class="{ bgc: tabbarIndex == 3 }">
-              <router-link to="/economy"
+              <router-link to="/environment"
                 ><span class="text fw-b" @click="changeTabbarIndex(3)"
-                  >城市经济</span
+                  >承载体信息提取</span
                 ></router-link
               >
             </div>
